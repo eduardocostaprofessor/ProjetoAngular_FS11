@@ -1,0 +1,133 @@
+
+
+
+
+/****************** CUSTOMIZAÇÃO DO BOOTSTRAP ******************/
+.container {
+    /* por padrão o bootstrap tem o max-width de 1320px */
+    max-width: 1200px;
+    /* background-color: #C31616; */
+}
+
+
+
+
+
+
+/****************** BANNER ******************/
+
+.banner {
+    height: 600px;
+    background-color: salmon;
+    background-image: url(/assets/images/banner_pilotos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner .banner-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 600px;
+    /* border: 3px solid salmon; */
+}
+
+.banner .banner-box .banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 500px;
+    height: 280px;
+    /* border: 1px solid white; */
+
+    font-family: "Roboto-Regular";
+    color: white;
+}
+
+.banner .banner-box .banner-info h2 {
+    font-family: "TitilliumWeb-Bold";
+    font-size: 75px;
+    text-align: center;
+}
+
+.banner .banner-box .banner-info p {
+    margin-top: -50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.banner .banner-info .botao-banner {
+    align-self: center;
+    /* propriedade para filho/item flex somente ele!! */
+    width: 260px;
+    height: 50px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: #C31616;
+    border-radius: 10px;
+}
+
+/**************** PRODUTOS  ****************/
+.produtos {
+    padding: 40px 0;
+    background-color: #1E1C21;
+
+
+}
+
+.produtos h2 {
+    margin-bottom: 40px;
+}
+
+.produtos .card {
+    max-width: 250px;
+    min-width: 230px;
+    margin-bottom: 20px;
+
+    background-image: linear-gradient(to bottom, #1E1C21, #343434);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+
+.produtos .card-title {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.produtos .card-buy {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #C31616;
+    text-transform: uppercase;
+    border: 1px solid #C31616;
+    border-radius: 10px;
+}
+
+/* TABLETS */
+@media screen and (max-width: 991px) {
+    /* imagem alternativa para o tablet
+    .banner {
+        background-image: url(../images/banner_lol.png);
+        
+    } */
+
+
+
+    
+
+
+}
+
+/* Smartphone */
+@media screen and (max-width: 767px) {
+    
+}

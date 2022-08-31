@@ -1,0 +1,25 @@
+<div class="container-grid fontes">
+    <i class="fa-solid fa-arrow-left"></i>
+
+    <h1>Login</h1>
+
+    <form action="" (ngSubmit)="fazerLogin()" >
+        <div class="linha">
+            <!-- <i class="fa-solid fa-user"></i> -->
+            <fa-icon [icon]="faUser"></fa-icon>
+            <input type="text" id="usuario" placeholder="usuario" name="usuario" [(ngModel)]="userModel.email" >
+        </div>
+        
+        <div class="linha">
+            <fa-icon [icon]="faLock"></fa-icon>
+            <input type="password" id="senha" placeholder="password" name="senha" [(ngModel)]="userModel.password">
+        </div>
+        <p id="msgValidacao">{{mensagem}}</p>
+
+        <button class="submit">Login</button> <br>
+        <button type="button" (click)="helloWorld()">Teste</button>
+        
+        <p>Primeira vez aqui? <a href="#">Sign up.</a></p>
+        <p>{{userModel.email}}</p>
+    </form>
+</div>

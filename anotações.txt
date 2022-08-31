@@ -1,0 +1,54 @@
+OBS: NPX OU npmjs - https://www.freecodecamp.org/portuguese/news/npm-x-npx-qual-e-a-diferenca/
+OBS2: https://rxjs.dev/deprecations/subscribe-arguments 
+
+JSON-SERVER-AUTH - https://www.npmjs.com/package/json-server-auth
+Seguir a documentação
+    criar o db.json com a rota users
+        {
+            "users": []
+        }
+
+    http://localhost:3000/register - cadastrar um novo usuário pelo insomnia
+    
+    http://localhost:3000/login - autentica/loga um usuário existente
+
+    
+    ********************** NO ANGULAR **********************
+    
+    Carregar/importar o módulo HttpClientModule (instalar o insomnia)
+        import { HttpClientModule } from "@angular/common/http";
+
+    Alterar a model para contemplar email, password (obrigatório para autenticar no json-server-auth)
+        model.ts
+        login.component.ts
+        login.component.html
+    
+    Preparar o serviço do angular (rotas - get post )
+    
+    Criar um service para as rotas da API - 
+        ng generate service services/use
+r
+    Injetar o HttpClient como dependência do service - 
+        constructor(private httpClient: HttpClient) { }
+        criar uma variável para a rota url
+            http://localhost:3000/signin
+    Criar o método post login
+
+        url = 'http://localhost:3000/login'
+  
+        // OPERAÇÕES
+        
+        // post - login
+        login( usuario: User ):Observable<any>{
+
+            return this.httpClient.post(this.url, JSON.stringify(usuario), {
+            headers : new HttpHeaders({ "Content-Type" : "application/json"}),
+            observe: "response"
+            })
+        }
+    
+
+        linkar o método fazerLogin com o service para autenticar
+
+
+
