@@ -13,7 +13,7 @@ export class UserService {
   constructor(private httpClient: HttpClient) { }
 
 
-  url = 'http://localhost:3000/signin2'
+  url = 'http://localhost:3000/signin'
   
   // OPERAÇÕES
   
